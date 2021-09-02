@@ -1,6 +1,9 @@
-import {unified} from "unified";
-import mongoose, {Schema} from "mongoose";
 import {value} from './module';
-const parser_var = unified();
-const schema = new Schema({});
-console.log(value);
+import {Schema} from 'mongoose';
+Promise.all([import('unified')]).then(([unified ]) => {
+
+    console.log(unified);
+    const parser_var = unified.unified();
+    const schema = new Schema({});
+    console.log(value);
+})
