@@ -1,5 +1,6 @@
 {
   "main": "dist/index.js",
+  "type": "module",
   "scripts": {
     "prerun": "tsc",
     "run": "node --experimental-specifier-resolution=node dist/index.js",
