@@ -1,8 +1,6 @@
-const unified = import("unified");
+import {unified} from "unified";
 import mongoose, {Schema} from "mongoose";
 import {value} from './module';
-unified.then((module) => {
-    const parser = module.unified();
-});
+const parser_var = unified();
 const schema = new Schema({});
 console.log(value);
