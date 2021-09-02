@@ -1,0 +1,15 @@
+{
+  "main": "dist/index.js",
+  "scripts": {
+    "prerun": "tsc",
+    "run": "node --experimental-specifier-resolution=node dist/index.js",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "4.3.5"
+  },
+  "dependencies": {
+    "mongoose": "^6.0.2",
+    "unified": "^10.1.0"
+  }
+}
